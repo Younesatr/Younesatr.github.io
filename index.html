@@ -3,306 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional portfolio of a Solar Energy Engineer specializing in PV system design and renewable energy solutions">
     <title>Solar Energy Engineer Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <style>
-        .hero-gradient {
-            background: linear-gradient(135deg, rgba(255,214,0,0.1) 0%, rgba(255,214,0,0.05) 100%);
-        }
-        .skill-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-        }
-        .nav-link {
-            position: relative;
-        }
-        .nav-link:after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -2px;
-            left: 0;
-            background-color: #f59e0b;
-            transition: width 0.3s ease;
-        }
-        .nav-link:hover:after {
-            width: 100%;
-        }
-    </style>
+    <meta name="description" content="Portfolio of a Solar Energy Engineer showcasing skills, projects, and experience.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"> <!-- Add a favicon -->
 </head>
-<body class="font-sans antialiased text-gray-800 bg-gray-50">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-sm fixed w-full z-10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <span class="text-xl font-semibold text-gray-900">Solar<span class="text-yellow-500">Energy</span></span>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="nav-link text-gray-900 px-3 py-2 text-sm font-medium">Home</a>
-                    <a href="about.html" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">About</a>
-                    <a href="skills.html" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">Skills</a>
-                    <a href="projects.html" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">Projects</a>
-                    <a href="contact.html" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 text-sm font-medium">Contact</a>
-                </div>
-                <div class="md:hidden flex items-center">
-                    <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500">
-                        <i data-feather="menu"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Mobile menu -->
-        <div class="mobile-menu hidden md:hidden bg-white shadow-lg">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="index.html" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-gray-700 hover:bg-gray-50">Home</a>
-                <a href="about.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-50">About</a>
-                <a href="skills.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-50">Skills</a>
-                <a href="projects.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-50">Projects</a>
-                <a href="contact.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-50">Contact</a>
-            </div>
-        </div>
-    </nav>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="hero-gradient pt-24 pb-16 md:pt-32 md:pb-24">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="md:flex items-center justify-between">
-                <div class="md:w-1/2 mb-12 md:mb-0" data-aos="fade-right">
-                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Solar Energy Solutions <span class="text-yellow-500">Engineered</span> for Tomorrow</h1>
-                    <p class="text-lg text-gray-600 mb-8">I design and optimize photovoltaic systems to harness the power of the sun efficiently and sustainably.</p>
-                    <div class="flex space-x-4">
-                        <a href="projects.html" class="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-3 px-6 rounded-lg transition duration-300">View Projects</a>
-                        <a href="contact.html" class="border border-gray-300 hover:border-yellow-500 text-gray-700 hover:text-yellow-600 font-medium py-3 px-6 rounded-lg transition duration-300">Contact Me</a>
-                    </div>
-                </div>
-                <div class="md:w-1/2" data-aos="fade-left">
-                    <img src="http://static.photos/technology/1024x576/10" alt="Solar Panels" class="rounded-lg shadow-xl w-full h-auto">
-                </div>
-            </div>
+    <section id="hero">
+        <img src="img/hero.jpg" alt="Solar Panels" class="hero-image">
+        <div class="hero-content">
+            <h1>[Your Name]</h1>
+            <p>Passionate Solar Energy Engineer dedicated to creating sustainable energy solutions.</p>
+            <a href="projects.html" class="cta-button">View My Projects</a>
         </div>
     </section>
 
-    <!-- Featured Projects -->
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">Featured Projects</h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Explore some of my recent solar energy projects and case studies</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300" data-aos="fade-up">
-                    <img src="http://static.photos/technology/640x360/20" alt="Solar Farm Project" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">10MW Solar Farm</h3>
-                        <p class="text-gray-600 mb-4">Designed and optimized a utility-scale solar farm in Arizona, increasing energy output by 12%.</p>
-                        <a href="projects.html" class="text-yellow-500 hover:text-yellow-600 font-medium inline-flex items-center">
-                            View Details <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Project 2 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300" data-aos="fade-up" data-aos-delay="100">
-                    <img src="http://static.photos/technology/640x360/30" alt="Residential Solar Project" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Residential Solar System</h3>
-                        <p class="text-gray-600 mb-4">Custom-designed rooftop solar solution for a net-zero energy home in California.</p>
-                        <a href="projects.html" class="text-yellow-500 hover:text-yellow-600 font-medium inline-flex items-center">
-                            View Details <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Project 3 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300" data-aos="fade-up" data-aos-delay="200">
-                    <img src="http://static.photos/technology/640x360/40" alt="Solar Monitoring System" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Solar Monitoring System</h3>
-                        <p class="text-gray-600 mb-4">Developed a real-time performance monitoring system for commercial PV installations.</p>
-                        <a href="projects.html" class="text-yellow-500 hover:text-yellow-600 font-medium inline-flex items-center">
-                            View Details <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-12">
-                <a href="projects.html" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-yellow-500 hover:bg-yellow-600 transition duration-300">
-                    View All Projects
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">Client Testimonials</h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">What industry professionals say about my work</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up">
-                    <div class="flex items-center mb-4">
-                        <div class="flex-shrink-0">
-                            <i data-feather="star" class="w-6 h-6 text-yellow-500"></i>
-                        </div>
-                        <div class="ml-4">
-                            <h3 class="text-lg font-medium text-gray-900">Exceptional Work</h3>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 mb-6">"The solar farm design exceeded our expectations in both efficiency and cost-effectiveness. The attention to detail was remarkable."</p>
-                    <div class="flex items-center">
-                        <img class="w-10 h-10 rounded-full" src="http://static.photos/people/200x200/10" alt="Client">
-                        <div class="ml-3">
-                            <p class="text-sm font-medium text-gray-900">Sarah Johnson</p>
-                            <p class="text-sm text-gray-500">Director, Green Energy Solutions</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
-                    <div class="flex items-center mb-4">
-                        <div class="flex-shrink-0">
-                            <i data-feather="star" class="w-6 h-6 text-yellow-500"></i>
-                        </div>
-                        <div class="ml-4">
-                            <h3 class="text-lg font-medium text-gray-900">Highly Recommended</h3>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 mb-6">"The residential solar system design was perfect for our needs. The engineer was knowledgeable and responsive throughout the process."</p>
-                    <div class="flex items-center">
-                        <img class="w-10 h-10 rounded-full" src="http://static.photos/people/200x200/20" alt="Client">
-                        <div class="ml-3">
-                            <p class="text-sm font-medium text-gray-900">Michael Chen</p>
-                            <p class="text-sm text-gray-500">Homeowner, California</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
-                    <div class="flex items-center mb-4">
-                        <div class="flex-shrink-0">
-                            <i data-feather="star" class="w-6 h-6 text-yellow-500"></i>
-                        </div>
-                        <div class="ml-4">
-                            <h3 class="text-lg font-medium text-gray-900">Technical Expertise</h3>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 mb-6">"The monitoring system implementation was flawless. The engineer's deep understanding of PV systems was evident in every aspect of the project."</p>
-                    <div class="flex items-center">
-                        <img class="w-10 h-10 rounded-full" src="http://static.photos/people/200x200/30" alt="Client">
-                        <div class="ml-3">
-                            <p class="text-sm font-medium text-gray-900">David Rodriguez</p>
-                            <p class="text-sm text-gray-500">CTO, SolarTech Monitoring</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="py-16 bg-yellow-500">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold text-white mb-6">Ready to Harness Solar Power for Your Project?</h2>
-            <p class="text-xl text-yellow-100 mb-8 max-w-3xl mx-auto">Let's discuss how we can implement efficient solar energy solutions tailored to your specific needs.</p>
-            <a href="contact.html" class="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-md text-yellow-700 bg-white hover:bg-gray-100 transition duration-300">
-                Get in Touch <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
-            </a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">SolarEnergy</h3>
-                    <p class="text-gray-400">Engineering sustainable solar solutions for a brighter future.</p>
-                </div>
-                <div>
-                    <h4 class="text-lg font-medium mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
-                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">About</a></li>
-                        <li><a href="skills.html" class="text-gray-400 hover:text-white transition duration-300">Skills</a></li>
-                        <li><a href="projects.html" class="text-gray-400 hover:text-white transition duration-300">Projects</a></li>
-                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-medium mb-4">Contact Info</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li class="flex items-start">
-                            <i data-feather="mail" class="w-5 h-5 mr-2 mt-1"></i>
-                            <span>contact@solarengineer.com</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i data-feather="phone" class="w-5 h-5 mr-2 mt-1"></i>
-                            <span>+1 (555) 123-4567</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i data-feather="map-pin" class="w-5 h-5 mr-2 mt-1"></i>
-                            <span>San Francisco, CA</span>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-medium mb-4">Connect</h4>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                            <i data-feather="linkedin" class="w-6 h-6"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                            <i data-feather="github" class="w-6 h-6"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                            <i data-feather="twitter" class="w-6 h-6"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                            <i data-feather="facebook" class="w-6 h-6"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 text-sm">© 2023 SolarEnergy. All rights reserved.</p>
-                <div class="flex space-x-6 mt-4 md:mt-0">
-                    <a href="#" class="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
-                    <a href="#" class="text-gray-400 hover:text-white text-sm">Terms of Service</a>
-                </div>
-            </div>
-        </div>
+    <footer>
+        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
     </footer>
 
-    <script>
-        // Mobile menu toggle
-        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
-            document.querySelector('.mobile-menu').classList.toggle('hidden');
-        });
-        
-        // Initialize AOS and Feather Icons
-        document.addEventListener('DOMContentLoaded', function() {
-            AOS.init({
-                duration: 800,
-                easing: 'ease-in-out',
-                once: true
-            });
-            feather.replace();
-        });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
